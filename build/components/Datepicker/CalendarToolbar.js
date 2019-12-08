@@ -7,8 +7,6 @@ exports.default = void 0;
 
 var _react = _interopRequireWildcard(require("react"));
 
-var _propTypes = _interopRequireDefault(require("prop-types"));
-
 var _dateUtils = require("./dateUtils");
 
 var _styledComponents = _interopRequireDefault(require("styled-components"));
@@ -110,12 +108,6 @@ function (_Component) {
   return CalendarToolbar;
 }(_react.Component);
 
-CalendarToolbar.propTypes = {
-  displayDate: _propTypes.default.object.isRequired,
-  nextMonth: _propTypes.default.bool,
-  onMonthChange: _propTypes.default.func,
-  prevMonth: _propTypes.default.bool
-};
 CalendarToolbar.defaultProps = {
   nextMonth: true,
   prevMonth: true
